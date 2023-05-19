@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<GroupAddress-Export xmlns="http://knx.org/xml/ga-export/01">
+  <!--GroupRange:-->
+  <!--  @Name: The name of the group range (1 to 255 characters)-->
+  <!--  @RangeStart: The inclusive start address of the range as specified in free group address style-->
+  <!--  @RangeEnd: The inclusive end address of the range as specified in free group address style-->
+  <!--  @Description: The group ranges' description if available-->
+  <!--GroupAddress:-->
+  <!--  @Name: The name of the group range (1 to 255 characters)-->
+  <!--  @Address: The address as specified either in three-level (1/2/3 or two-level (1/3) or numeric (12345) or hexadecimal ($1Fa3 or 0x1fa3) group address value-->
+  <!--  @Central: True if the group address has the Central flag set-->
+  <!--  @Unfiltered: True if the group address has the Unfiltered flag set-->
+  <!--  @Description: The group addresses' description if available-->
+  <!--  @DTPs: The Data Point Types associated with the group address if available, comma separated, e.g. '1.001, 1.002'-->
+  <GroupRange Name="Zentrales" RangeStart="1" RangeEnd="2047">
+    <GroupAddress Name="EG Haustür verriegelt" Address="0/1" Description="Flur EG Flur Haustür Verriegelt" DPTs="DPST-1-1" />
+    <GroupAddress Name="Windalarm" Address="0/2" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Regenalarm" Address="0/3" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-9-1" />
+    <GroupAddress Name="Uhrzeit" Address="0/4" DPTs="DPST-10-1" />
+    <GroupAddress Name="Tag/Nacht" Address="0/5" DPTs="DPST-1-2" />
+    <GroupAddress Name="Sommer/Winter" Address="0/6" />
+    <GroupAddress Name="Diagnosetext debugging" Address="0/7" DPTs="DPST-16-0" />
+    <GroupAddress Name="Displays an/aus Status" Address="0/8" DPTs="DPST-1-2" />
+    <GroupAddress Name="Sperre wegen Spannung = 1" Address="0/9" Description="Sensor Spanung da=1" DPTs="DPST-1-6" />
+    <GroupAddress Name="Homeassistent aktiv Schalten" Address="0/10" DPTs="DPST-1-1" />
+    <GroupAddress Name="Homeassistent aktiv Status" Address="0/11" DPTs="DPST-1-1" />
+    <GroupAddress Name="Szene Rolladen" Address="0/12" Description="1 - Rolladen Offen&#xD;&#xA;2 - Rolladen halb offen&#xD;&#xA;3 - Rolladen geschlossen&#xD;&#xA;" DPTs="DPST-17-1" />
+    <GroupAddress Name="EG Flur Treppenlich" Address="0/13" DPTs="DPST-1-1" />
+    <GroupAddress Name="Haus Betriebsart Status" Address="0/14" DPTs="DPST-20-102" />
+    <GroupAddress Name="Heizen / Kühlen Status" Address="0/15" DPTs="DPST-1-100" />
+    <GroupAddress Name="Temperatur aussen" Address="0/16" DPTs="DPST-9-1" />
+  </GroupRange>
+  <GroupRange Name="Beleuchtung" RangeStart="2048" RangeEnd="4095">
+    <GroupAddress Name="Schalten" Address="1/0" Description="Außenanlage Fassadenbeleuchtung Ost" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/1" Description="Außenanlage Fassadenbeleuchtung Ost" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/2" Description="Außenanlage Fassadenbeleuchtung West L1.0.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/3" Description="Außenanlage Fassadenbeleuchtung West L1.0.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/4" Description="Außenanlage Fassadenbeleuchtung Nord L1.0.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/5" Description="Außenanlage Fassadenbeleuchtung Nord L1.0.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/6" Description="EG Flur Decke L1.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/7" Description="EG Flur Decke L1.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/8" Description="Treppen EG-OG L1.1.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/9" Description="Treppen EG-OG L1.1.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Dimmen" Address="1/10" Description="Treppen EG-OG L1.1.2" DPTs="DPST-3-7" />
+    <GroupAddress Name="Dimmwert" Address="1/11" Description="Treppen EG-OG L1.1.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Wert" Address="1/12" Description="Treppen EG-OG L1.1.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Schalten" Address="1/13" Description="EG Flur Wand L1.1.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/14" Description="EG Flur Wand L1.1.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/15" Description="EG HWR Decke L1.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/16" Description="EG HWR Decke L1.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/17" Description="EG Wohnen Decke Sitzecke  L1.3.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/18" Description="EG Wohnen Decke Sitzecke  L1.3.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/19" Description="EG Wohnen Decke Couchtisch L1.3.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/20" Description="EG Wohnen Decke Couchtisch L1.3.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/21" Description="EG Wohnen Decke Gang L1.3.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/22" Description="EG Wohnen Decke Gang L1.3.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/23" Description="EG Wohnen Decke Esstisch L1.3.4" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/24" Description="EG Wohnen Decke Esstisch L1.3.4" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/25" Description="EG Wohnen Decke Kücheninsel L1.3.5" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/26" Description="EG Wohnen Decke Kücheninsel L1.3.5" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/27" Description="EG Wohnen Decke Küchenfenster L1.3.6" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/28" Description="EG Wohnen Decke Küchenfenster L1.3.6" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/29" Description="EG Wohnen Boden Kücheninsel L1.3.7" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/30" Description="EG Wohnen Boden Kücheninsel L1.3.7" DPTs="DPST-1-1" />
+    <GroupAddress Name="Dimmen" Address="1/31" Description="EG Wohnen Boden Kücheninsel L1.3.7" DPTs="DPST-3-7" />
+    <GroupAddress Name="Dimmwert" Address="1/32" Description="EG Wohnen Boden Kücheninsel L1.3.7" DPTs="DPST-5-1" />
+    <GroupAddress Name="Wert" Address="1/33" Description="EG Wohnen Boden Kücheninsel L1.3.7" DPTs="DPST-5-1" />
+    <GroupAddress Name="Schalten" Address="1/34" Description="EG Bad Decke Sauna L1.4.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/35" Description="EG Bad Decke Sauna L1.4.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/36" Description="EG Bad Decke Gang L1.4.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/37" Description="EG Bad Decke Gang L1.4.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/38" Description="EG Bad Decke Dusche L1.4.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/39" Description="EG Bad Decke Dusche L1.4.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/40" Description="EG Bad Wand Waschtisch L1.4.4" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/41" Description="EG Bad Wand Waschtisch L1.4.4" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/42" Description="Treppen OG-DG L2.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/43" Description="Treppen OG-DG L2.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Dimmen" Address="1/44" Description="Treppen OG-DG L2.1.1" DPTs="DPST-3-7" />
+    <GroupAddress Name="Dimmwert" Address="1/45" Description="Treppen OG-DG L2.1.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Wert" Address="1/46" Description="Treppen OG-DG L2.1.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Schalten" Address="1/47" Description="OG Flur Decke L2.1.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/48" Description="OG Flur Decke L2.1.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/49" Description="OG Bad Decke Gang L2.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/50" Description="OG Bad Decke Gang L2.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/51" Description="OG Bad Decke Dusche L2.2.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/52" Description="OG Bad Decke Dusche L2.2.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/53" Description="OG Bad Wand Waschtisch L2.2.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/54" Description="OG Bad Wand Waschtisch L2.2.3" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/55" Description="OG Kind Decke Gang L2.3.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/56" Description="OG Kind Decke Gang L2.3.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/57" Description="OG Kind Decke Mitte L2.3.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/58" Description="OG Kind Decke Mitte L2.3.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/59" Description="OG Arbeit Decke Gang L2.4.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/60" Description="OG Arbeit Decke Gang L2.4.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Decke Mitte Schalten KNX" Address="1/61" Description="OG Arbeit Decke Mitte L2.4.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Decke Mitte Status KNX" Address="1/62" Description="OG Arbeit Decke Mitte L2.4.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/63" Description="OG Schlafen Decke Gang L2.5.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/64" Description="OG Schlafen Decke Gang L2.5.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/65" Description="OG Schlafen Decke Mitte L2.5.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/66" Description="OG Schlafen Decke Mitte L2.5.2" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/67" Description="DG Lager Wand L3.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/68" Description="DG Lager Wand L3.1.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Schalten" Address="1/69" Description="DG Hobby Wand L3.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="Status" Address="1/70" Description="DG Hobby Wand L3.2.1" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Kind Decke Mitte Szene" Address="1/100" Description="OG Kind Decke Mitte L2.3.2" DPTs="DPST-17-1" />
+    <GroupAddress Name="OG Kind Decke Mitte Dimmen Hue" Address="1/101" Description="OG Kind Decke Mitte L2.3.2" DPTs="DPST-3-7" />
+    <GroupAddress Name="OG Kind Decke Mitte Schalten Hue" Address="1/102" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Kind Decke Mitte Status Hue" Address="1/103" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Decke Mitte Dimmen Hue" Address="1/104" DPTs="DPST-3-7" />
+    <GroupAddress Name="OG Arbeit Decke Mitte Schalten Hue" Address="1/105" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Decke Mitte Status Hue" Address="1/106" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Schlafen Stehlampe Nachttisch Dimmen Hue" Address="1/107" DPTs="DPST-3-7" />
+    <GroupAddress Name="OG Schlafen Stehlampe Nachttisch Schalten Hue" Address="1/108" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Schlafen Stehlampe Nachttisch Status Hue" Address="1/109" DPTs="DPST-1-1" />
+  </GroupRange>
+  <GroupRange Name="Beschattung" RangeStart="4096" RangeEnd="6143">
+    <GroupAddress Name="Bewegen" Address="2/0" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/1" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Regenalarm" Address="2/3" Description="OG Kind Fenster Süd R2.3.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Position" Address="2/4" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/5" Description="EG HWR Rolladen R1.2.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Windalarm" Address="2/6" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-1-5" />
+    <GroupAddress Name="Regenalarm" Address="2/7" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-1-5" />
+    <GroupAddress Name="Windalarm" Address="2/8" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Lamellenstellung" Address="2/9" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/10" Description="EG Wohnen Panorama J1.2.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/11" Description="EG Wohnen Panorama J1.2.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Fahrzeitmessung" Address="2/12" Description="EG Wohn Panoramafenster J1.3.1" DPTs="DPST-1-10" />
+    <GroupAddress Name="Regenalarm" Address="2/13" Description="OG Kind Fenster West R2.3.2" DPTs="DPST-1-5" />
+    <GroupAddress Name="Position" Address="2/14" Description="EG Wohnen Panorama J1.2.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/15" Description="EG Wohnen Panorama J1.2.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Regenalarm" Address="2/16" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Lamellenstellung" Address="2/17" Description="OG Kind Fenster West R2.3.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/18" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Windalarm" Address="2/19" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Bewegen" Address="2/20" Description="EG Wohnen Terrassentür Gang J1.2.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/21" Description="EG Wohnen Terrassentür Gang J1.2.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Fahrzeitmessung" Address="2/22" Description="EG Wohnen Terassentür J1.3.2" DPTs="DPST-1-14" />
+    <GroupAddress Name="Regenalarm" Address="2/23" Description="OG Arbeit Fenster Nord R2.4.2" DPTs="DPST-1-5" />
+    <GroupAddress Name="Position" Address="2/24" Description="EG Wohnen Terrassentür Gang J1.2.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/25" Description="EG Wohnen Terrassentür Gang J1.2.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Regenalarm" Address="2/26" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Lamellenstellung" Address="2/27" Description="OG Arbeit Fenster Nord R2.4.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/28" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/30" Description="EG Wohnen Terrassentür Küche J1.2.3" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/31" Description="EG Wohnen Terrassentür Küche J1.2.3" DPTs="DPST-1-7" />
+    <GroupAddress Name="Fahrzeitmesung" Address="2/32" Description="EG Küche Terassentür J1.3.3" DPTs="DPST-1-14" />
+    <GroupAddress Name="Regenalarm" Address="2/33" Description="OG Schlafen Fenster Ost R2.5.2" DPTs="DPST-1-5" />
+    <GroupAddress Name="Position" Address="2/34" Description="EG Wohnen Terrassentür Küche J1.2.3" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/35" Description="EG Wohnen Terrassentür Küche J1.2.3" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/37" Description="OG Schlafen Fenster Ost R2.5.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/40" Description="EG Wohnen Küche J1.2.4" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/41" Description="EG Wohnen Küche J1.2.4" DPTs="DPST-1-7" />
+    <GroupAddress Name="Fahrzeitmessung" Address="2/42" DPTs="DPST-1-10" />
+    <GroupAddress Name="Position" Address="2/44" Description="EG Wohnen Küche J1.2.4" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/45" Description="EG Wohnen Küche J1.2.4" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/50" Description="EG Wohnen Terassentür Essen R1.3.5" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/51" Description="EG Wohnen Terassentür Essen R1.3.5" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/54" Description="EG Wohnen Terassentür Essen R1.3.5" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/60" Description="EG Bad Tür R1.4.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/61" Description="EG Bad Tür R1.4.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/64" Description="EG Bad Tür R1.4.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/70" Description="EG Bad Fenster R1.4.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/71" Description="EG Bad Fenster R1.4.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Windalarm" Address="2/73" Description="OG Lager Rolladen R3.1.1" DPTs="DPST-1-5" />
+    <GroupAddress Name="Position" Address="2/74" Description="EG Bad Fenster R1.4.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Lamellenstellung" Address="2/76" Description="OG Lager Rolladen R3.1.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/80" Description="OG Bad Fenster Ost R2.1.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/81" Description="OG Bad Fenster Ost R2.1.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/84" Description="OG Bad Fenster Ost R2.1.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/90" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/91" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/94" Description="OG Bad Fenster Süd R2.2.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/100" Description="OG Kind Fenster Süd R2.3.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/101" Description="OG Kind Fenster Süd R2.3.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/104" Description="OG Kind Fenster Süd R2.3.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/110" Description="OG Kind Fenster West R2.3.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/111" Description="OG Kind Fenster West R2.3.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/114" Description="OG Kind Fenster West R2.3.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/120" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/121" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/124" Description="OG Arbeit Fenster West R2.4.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/130" Description="OG Arbeit Fenster Nord R2.4.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/131" Description="OG Arbeit Fenster Nord R2.4.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/134" Description="OG Arbeit Fenster Nord R2.4.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/140" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/141" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/144" Description="OG Schlafen Fenster Nord R2.5.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/150" Description="OG Schlafen Fenster Ost R2.5.2" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/151" Description="OG Schlafen Fenster Ost R2.5.2" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/154" Description="OG Schlafen Fenster Ost R2.5.2" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/160" Description="DG Lager Rolladen R3.1.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/161" Description="DG Lager Rolladen R3.1.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/164" Description="DG Lager Rolladen R3.1.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/170" Description="DG Hobby Rolladen R3.2.1" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/171" Description="DG Hobby Rolladen R3.2.1" DPTs="DPST-1-7" />
+    <GroupAddress Name="Position" Address="2/174" Description="DG Hobby Rolladen R3.2.1" DPTs="DPST-5-1" />
+    <GroupAddress Name="Bewegen" Address="2/180" DPTs="DPST-1-8" />
+    <GroupAddress Name="Schritt/Stop" Address="2/181" />
+    <GroupAddress Name="Position" Address="2/182" />
+    <GroupAddress Name="EG Wohen Szene Beschattung" Address="2/200" DPTs="DPST-17-1" />
+    <GroupAddress Name="OG Bad Beschattung Prozent" Address="2/202" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Bad Beschattung Prozent Status" Address="2/203" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Schlafen Beschattung Prozent" Address="2/204" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Schlafen Beschattung Prozent Status" Address="2/205" DPTs="DPST-5-1" />
+  </GroupRange>
+  <GroupRange Name="Klima" RangeStart="6144" RangeEnd="8191">
+    <GroupAddress Name="EG Flur Raumtemperatur Ist" Address="3/0" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Flur Sollwertverschiebung Temp" Address="3/1" DPTs="DPST-1-7" />
+    <GroupAddress Name="EG Flur Raumtemperatur Soll" Address="3/2" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Flur Stellventil Status" Address="3/3" DPTs="DPST-1-11" />
+    <GroupAddress Name="EG Flur Stellventil Prozent" Address="3/4" DPTs="DPST-5-1" />
+    <GroupAddress Name="EG Wohnen Raumtemperatur Ist" Address="3/10" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Wohnen Sollwertverschiebung" Address="3/11" DPTs="DPST-1-7" />
+    <GroupAddress Name="EG Wohnen Raumtemperatur Soll" Address="3/12" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Wohnen Stellventil Status" Address="3/13" DPTs="DPST-1-1" />
+    <GroupAddress Name="EG Wohnen Stellventil Prozent" Address="3/14" DPTs="DPST-5-1" />
+    <GroupAddress Name="EG Bad Raumtemperatur Ist" Address="3/20" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Bad Sollwertverschiebung" Address="3/21" DPTs="DPST-1-7" />
+    <GroupAddress Name="EG Bad Raumtemperatur Soll" Address="3/22" DPTs="DPST-9-1" />
+    <GroupAddress Name="EG Bad Stellventil Status" Address="3/23" DPTs="DPST-1-11" />
+    <GroupAddress Name="EG Bad Stellventil Prozent" Address="3/24" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Flur Raumtemperatur Ist" Address="3/30" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Flur Sollwertverschiebung" Address="3/31" DPTs="DPST-1-7" />
+    <GroupAddress Name="OG Flur Raumtemperatur Soll" Address="3/32" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Flur Stellventil Status" Address="3/33" DPTs="DPST-1-11" />
+    <GroupAddress Name="OG Flur Stellventil Prozent" Address="3/34" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Bad Raumtemperatur Ist" Address="3/40" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Bad Sollwertverschiebung" Address="3/41" DPTs="DPST-1-7" />
+    <GroupAddress Name="OG Bad Raumtemperatur Soll" Address="3/42" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Bad Stellventil Status" Address="3/43" DPTs="DPST-1-11" />
+    <GroupAddress Name="OG Bad Stellventil Prozent" Address="3/44" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Kind Raumtemperatur Ist" Address="3/50" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Kind Sollwertverschiebung" Address="3/51" DPTs="DPST-1-7" />
+    <GroupAddress Name="OG Kind Raumtemperatur Soll" Address="3/52" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Kind Stellventil Status" Address="3/53" DPTs="DPST-1-11" />
+    <GroupAddress Name="OG Kind Stellventil Prozent" Address="3/54" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Arbeit Raumtemperatur Ist" Address="3/60" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Arbeit Sollwertverschiebung" Address="3/61" DPTs="DPST-1-7" />
+    <GroupAddress Name="OG Arbeit Raumtemperatur Soll" Address="3/62" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Arbeit Stellventil Status" Address="3/63" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Arbeit Stellventil Prozent" Address="3/64" DPTs="DPST-5-1" />
+    <GroupAddress Name="OG Schlafen Raumtemperatur Ist" Address="3/70" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Schlafen Sollwertverschiebung" Address="3/71" DPTs="DPST-1-7" />
+    <GroupAddress Name="OG Schlafen Raumtemperatur Soll" Address="3/72" DPTs="DPST-9-1" />
+    <GroupAddress Name="OG Schlafen Stellventil Status" Address="3/73" DPTs="DPST-1-11" />
+    <GroupAddress Name="OG Schlafen Stellventil Prozent" Address="3/74" DPTs="DPST-5-1" />
+  </GroupRange>
+  <GroupRange Name="Umwelt" RangeStart="8192" RangeEnd="10239" />
+  <GroupRange Name="Geräte" RangeStart="10240" RangeEnd="12287">
+    <GroupAddress Name="EG Wohnen Media Schalten" Address="5/0" DPTs="DPST-1-1" />
+    <GroupAddress Name="EG Wohnen Media Status" Address="5/1" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Schreibtisch Schalten" Address="5/2" DPTs="DPST-1-1" />
+    <GroupAddress Name="OG Arbeit Schreibtisch Status" Address="5/3" DPTs="DPST-1-1" />
+  </GroupRange>
+  <GroupRange Name="Szenen" RangeStart="12288" RangeEnd="14335">
+    <GroupAddress Name="OG Arbeit Rolladen" Address="6/0" DPTs="DPST-17-1" />
+  </GroupRange>
+</GroupAddress-Export>
